@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="contenedor-header">
+        <nav class="nav-menu">
+            <ul class="menu-cuenta">
+                <li><img src="./solun.png" alt="logo" width="250px"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./Micuenta.html">Mi Cuenta</a></li>
+                <li><a href="./Valoracion.html">Valoracion</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <fieldset class="contenedor-fieldset">
+            <form action="" class="contenedor-form">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Pilar" required class="contenedor-input"> 
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Rodriguez" required class="contenedor-input"> 
+                </div>
+                <br>
+                <div>
+                    <label for="sexo">Genero</label> 
+                    <select name="Sexo" id="" class="contenedor-input">
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="No Binario">No Binario</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="birth">Fecha de nacimiento</label>
+                    <input type="date" name="birth" required class="contenedor-input" >
+                </div>
+                <br>
+                <div>
+                    <label for="email">Mail</label>
+                    <input type="email" name="email" placeholder="SoLun@gmail.com" required class="contenedor-input">
+                </div>
+                <br>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" required class="contenedor-input">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar datos" class="contenedor-input" >
+                </div>
+                <br>
+                <div>
+                    <label for="acepta">¿Acepta los terminos y condiciones?</label>
+                    <input type="checkbox" name="acepar" value="1" required class="contenedor-input">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <br><br>
+    <footer>
+        <div>
+            <a href="mail:SoLun@gmail.com">SoLun@gmail.com</a>: Cualquier inconveniente escribinos!!
+        </div>
+    </footer>
+</body>
+</html>

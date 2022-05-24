@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color:#FFC4C4;
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor-header{
+    width: 90%;
+    margin: auto;
+}
+.nav-menu menu{
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFC4C4;
+}
+.nav-menu li{
+    display: inline-block;
+    width: 280px;
+}
+.nav-menu a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+    line-height: 90px;
+    float: left;
+}
+.subtitulo{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #4F5252;
+    color: white;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+}
+.modelos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.modelouno{
+    height: 500px;
+}
+.modelodos{
+    height: 500px;
+}
+.modelotres{
+    height: 500px;
+}
+.catalogo{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    size: 50px;
+    background-color:#FFC4C4 ;
+}
+.contenedor-mas-vendido{
+    padding: 25px;
+}
+.contenedor-lista-ordenada{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFC4C4;
+    text-align: center;
+    font-style: oblique;
+}
+footer{
+        display: inline-block;
+        width: 280px;
+        background-color:#FFC4C4 ;
+        padding: 20px;
+}
+.menu-cuenta{
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFC4C4;
+    text-align: center;
+}
+.contenedor-fieldset{
+    padding: 20px;
+    margin: 20px;
+    color: #4F5252;
+}
+.contenedor-form{
+    color: black;
+    font-weight: bold;
+}
+.contenedor-input{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.contenedor-tabla{
+    margin: auto;
+    padding: auto;
+}
+tr{
+    color: black;
+}
+.contenedor-nombres{
+    color: black;
+    font-weight: bold;
+}
+.subcontenedor-tabla{
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4F5252;
+}
+td{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.contenedor-comentarios{
+    margin: 35px;
+    text-align: center;
+}
+.contenedor-texto{
+    font-weight: bold;
+}
+.modelos{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    gap: 25px;
+}
+.contenedor-main-valoracion{
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+}
+@media screen and (max-width:700px){
+/*index*/
+.modelos{
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(4,auto);
+    grid-template-areas:
+    "modelouno"
+    "modelodos"
+    "modelotres"
+    "catalogo" ;
+}
+/*valoraciones*/
+.contenedor-main-valoracion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3,auto);
+    grid-template-areas:
+    "contenedor-tabla"
+    "contenedor-texto"
+    "contenedor-comentarios";
+}
+}
+
+
+
