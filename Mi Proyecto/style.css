@@ -9,23 +9,8 @@
     width: 90%;
     margin: auto;
 }
-.nav-menu menu{
-    list-style: none;
-    text-decoration: none;
+.body{
     background-color: #FFC4C4;
-}
-.nav-menu li{
-    display: inline-block;
-    width: 280px;
-}
-.nav-menu a{
-    display: block;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: black;
-    line-height: 90px;
-    float: left;
 }
 .subtitulo{
     font-family: 'Nunito', sans-serif;
@@ -100,19 +85,22 @@ footer{
 .contenedor-tabla{
     margin: auto;
     padding: auto;
+    text-align: center;
+    background-color: #FFC4C4;
 }
 tr{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .contenedor-nombres{
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    text-align: center;
 }
 .subcontenedor-tabla{
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    color: #4F5252;
+    color: #ffffff;
 }
 td{
     padding: 10px;
@@ -134,6 +122,9 @@ td{
 .contenedor-main-valoracion{
     display: grid;
     grid-template-columns:repeat(3,auto);
+}
+.mail{
+    background-color: #FFC4C4;
 }
 @media screen and (max-width:700px){
 /*index*/

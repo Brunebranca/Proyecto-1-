@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Solun indumentaria</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +19,34 @@
 <body>
     <div class="contenedor">
         <header class="contenedor-header">
-            <nav class="nav-menu">
-                <ul class="menu">
-                    <li><img src="./solun.png" alt="logo" width="150px"></li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./Micuenta.html">Mi Cuenta</a></li>
-                    <li><a href="./Valoracion.html">Valoracion</a></li>
-                </ul>
+            <nav class="navbar col-7 p-3 bg-#FFC4C4">
+                <div class="container bg-#FFC4C4">
+                    <a class="navbar-brand" href="#">
+                        <img src="./solun.png" alt="" width="110" height="100">
+                    </a>
+                    <nav class="navbar navbar-expand-lg bg-#FFC4C4">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse bg-#FFC4C4" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item col-8 bg-#FFC4C4">
+                                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item col-10">
+                                        <a class="nav-link" href="./micuenta.html">Mi Cuenta</a>
+                                    </li>
+                                    <li class="nav-item col-12">
+                                        <a class="nav-link" href="./valoracion.html">Valoraciones</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </nav>
         </header>
         <main class="contenedor-main">
@@ -37,9 +60,9 @@
                 <img src="./modelo 2.jpg" class="modelodos" height="590" alt="MUestra 2">
                 <img src="./modelo 3.jpg" class="modelotres" alt="Muestra 3">
                 <section class="contenedor-mas-vendido">
-                    <h3 class="catalogo">LO MAS VENDIDO</h3>
+                    <h3 class="catalogo lead">LO MAS VENDIDO</h3>
                     <div class="contenedor-listado">
-                        <ol class="contenedor-lista-ordenada">
+                        <ol class="contenedor-lista-ordenada col-10">
                             <li>Vestido Kaily </li>
                             <li>Remera Cielo Estrellado</li>
                             <li>Vestido Hollywood</li>
@@ -58,5 +81,9 @@
             <p> Instagram: <a href="instagram:SoLun">SoLun</a> </p>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
