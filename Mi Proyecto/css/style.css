@@ -230,7 +230,7 @@ td {
     height: 500px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:480px) {
 
     /*index*/
     .modelos {
@@ -253,5 +253,22 @@ td {
             "contenedor-tabla"
             "contenedor-texto"
             "contenedor-comentarios";
+    }
+
+    /*productos*/
+    .contenedor-modelos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
+    grid-template-areas: 
+    "modelouno"
+    "modelodos"
+    "modelotres"
+    "modelocuatro"
+    "modelocinco"
+    "modeloseis"
+    "modelosiete"
+    "modeloocho"
+    "modelonueve";
     }
 }
