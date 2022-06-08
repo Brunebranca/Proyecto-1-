@@ -1,0 +1,256 @@
+/*todo*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #FFC4C4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body {
+    background-color: #FFC4C4;
+}
+
+.contenedor-header {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    display: inline-block;
+    width: 280px;
+    background-color: #FFC4C4;
+    padding: 20px;
+}
+
+/*home*/
+.subtitulo {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #4F5252;
+    color: white;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: auto;
+    padding: 10%;
+}
+
+.modelos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 25px;
+}
+
+.modelouno {
+    height: 500px;
+}
+
+.modelodos {
+    height: 500px;
+}
+
+.modelotres {
+    height: 500px;
+}
+
+.catalogo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    size: 50px;
+    background-color: #FFC4C4;
+}
+
+.contenedor-mas-vendido {
+    padding: 25px;
+}
+
+.contenedor-lista-ordenada {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: #FFC4C4;
+    text-align: center;
+    font-style: oblique;
+}
+
+/*micuenta*/
+.contenedor-fieldset {
+    padding: 20px;
+    margin: 20px;
+    color: #4F5252;
+}
+
+.contenedor-formulario {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: auto;
+    font-weight: bold
+}
+
+.contenedor-formulario-texto {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: auto;
+    font-weight: bold
+}
+
+.contenedor-form {
+    color: black;
+    font-weight: bold;
+}
+
+.contenedor-input {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/*valoraciones*/
+.contenedor-tabla {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    background-color: #FFC4C4;
+}
+
+tr {
+    color: rgb(255, 255, 255);
+}
+
+.contenedor-nombres {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.subcontenedor-tabla {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+td {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor-comentarios {
+    margin: 35px;
+    text-align: center;
+}
+
+.contenedor-texto {
+    font-weight: bold;
+}
+
+/*todo*/
+.contenedor-main-valoracion {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.mail {
+    background-color: #FFC4C4;
+}
+
+.contenedor-gmail {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor-facebook {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor-instagram {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*productos*/
+.contenedor-stock {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: auto;
+    font-weight: bold
+}
+
+.modelos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    padding: 10px;
+    justify-items: center;
+}
+
+.modelouno {
+    height: 500px;
+}
+
+.modelodos {
+    height: 500px;
+}
+
+.modelotres {
+    height: 500px;
+}
+
+.modelocuatro {
+    height: 500px;
+}
+
+.modelocinco {
+    height: 500px;
+}
+
+.modeloseis {
+    height: 500px;
+}
+
+.modelosiete {
+    height: 500px;
+}
+
+.modeloocho {
+    height: 500px;
+}
+
+.modelonueve {
+    height: 500px;
+}
+
+@media screen and (max-width:700px) {
+
+    /*index*/
+    .modelos {
+        display: flex;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "modelouno"
+            "modelodos"
+            "modelotres"
+            "catalogo";
+    }
+
+    /*valoraciones*/
+    .contenedor-main-valoracion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "contenedor-tabla"
+            "contenedor-texto"
+            "contenedor-comentarios";
+    }
+}

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Mi Cuenta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Mi Proyecto/css/style.css">
 </head>
+
 <body class="body bg-#FFC4C4">
     <header class="contenedor-header">
         <nav class="navbar col-7 p-3 bg-#FFC4C4">
             <div class="container bg-#FFC4C4">
                 <a class="navbar-brand" href="#">
-                    <img src="./solun.png" alt="" width="110" height="100">
+                    <img src="/Mi Proyecto/img/solun.png" alt="" width="110" height="100">
                 </a>
                 <nav class="navbar navbar-expand-lg bg-#FFC4C4">
                     <div class="container-fluid">
@@ -28,14 +31,17 @@
                         </button>
                         <div class="collapse navbar-collapse bg-#FFC4C4" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item col-8 bg-#FFC4C4">
-                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <li class="nav-item col-6 bg-#FFC4C4">
+                                    <a class="nav-link active" aria-current="page" href="/Mi Proyecto/html/index.html">Home</a>
+                                </li>
+                                <li class="nav-item col-8">
+                                    <a class="nav-link" href="/Mi Proyecto/html/productos.html">productos</a>
                                 </li>
                                 <li class="nav-item col-10">
-                                    <a class="nav-link" href="./micuenta.html">Mi Cuenta</a>
+                                    <a class="nav-link" href="/Mi Proyecto/html/micuenta.html">Mi Cuenta</a>
                                 </li>
                                 <li class="nav-item col-12">
-                                    <a class="nav-link" href="./valoracion.html">Valoraciones</a>
+                                    <a class="nav-link" href="/Mi Proyecto/html/valoracion.html">Valoraciones</a>
                                 </li>
                             </ul>
                         </div>
@@ -45,20 +51,22 @@
         </nav>
     </header>
     <main>
+        <h4 class="contenedor-formulario">¿Quieres ser parte de nuestras modelos?</h4>
+        <p class="contenedor-formulario-texto">Registrate para ser una de ellas!!</p>
         <fieldset class="contenedor-fieldset">
             <form action="" class="contenedor-form">
-                <div class="form col-7">
+                <div>
                     <label for="nombre" class="label">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Pilar" required class="contenedor-input"> 
+                    <input type="text" name="nombre" placeholder="Pilar" required class="contenedor-input">
                 </div>
                 <br>
                 <div>
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" placeholder="Rodriguez" required class="contenedor-input"> 
+                    <input type="text" name="apellido" placeholder="Rodriguez" required class="contenedor-input">
                 </div>
                 <br>
                 <div>
-                    <label for="sexo">Genero</label> 
+                    <label for="sexo">Genero</label>
                     <select name="Sexo" id="" class="contenedor-input">
                         <option value="Mujer">Mujer</option>
                         <option value="Hombre">Hombre</option>
@@ -68,7 +76,7 @@
                 <br>
                 <div>
                     <label for="birth">Fecha de nacimiento</label>
-                    <input type="date" name="birth" required class="contenedor-input" >
+                    <input type="date" name="birth" required class="contenedor-input">
                 </div>
                 <br>
                 <div>
@@ -82,7 +90,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="submit" value="Enviar datos" class="contenedor-input" >
+                    <input type="submit" value="Enviar datos" class="contenedor-input">
                 </div>
                 <br>
                 <div>
@@ -94,12 +102,22 @@
     </main>
     <br><br>
     <footer>
-        <div class="mail bg-#FFC4C4">
-            <a href="mail:SoLun@gmail.com">SoLun@gmail.com</a>: Cualquier inconveniente escribinos!!
+        <div class="contenedor-gmail">
+            <img src="/Mi Proyecto/img/gmail.png" width="50" height="45" alt="">
+            <p><a href="mail:SoLun@gmail.com">SoLun@gmail.com</a> </p>
+        </div>
+        <div class="contenedor-facebook">
+            <img src="/Mi Proyecto/img/facebook.png" width="50" height="45" alt="">
+            <p><a href="facebook:SoLun">SoLun</a> </p>
+        </div>
+        <div class="contenedor-instagram">
+            <img src="/Mi Proyecto/img/instagram.png" width="50" height="45" alt="">
+            <p><a href="instagram:SoLun">SoLun</a> </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
